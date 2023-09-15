@@ -51,12 +51,16 @@ input {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 h1 {
@@ -132,11 +136,11 @@ button.accent {
 	padding: 35px 55px 35px;
 	min-height: 250px;
 	position: absolute;
-	top: 25%;
+	top: 10%;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	margin-top: -160px;
+	margin-top:0px;
 }
 
 .session-page-container .join-session-submit .create-session-submit {

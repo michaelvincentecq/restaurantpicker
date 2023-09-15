@@ -15,7 +15,7 @@ var selectedNameH1 = document.querySelector('#selectedNameH1');
 var sessionCodeH1 = document.querySelector('#sessionCodeH1');
 
 const stompClient = new StompJs.Client({
-	brokerURL: 'ws://localhost:8080/restaurant-picker-websocket'
+	brokerURL: 'ws://localhost:8001/restaurant-picker-websocket'
 });
 
 var sessionCode = null;
@@ -49,8 +49,9 @@ function processResponse(restaurantPickerDto) {
 		//$("#restaurantListArea").text("");
 		//$("#restaurantListArea").append("Randomly Selected: " + restaurantPickerDto.selectedRestaurantName);
 		selectedNamePage.classList.remove('hidden');
-		selectedNameH1.textContent = restaurantPickerDto.selectedRestaurantName;
+		selectedNameH1.innerHTML = "RANDOMLY SELECTED:<br>" + restaurantPickerDto.selectedRestaurantName;
 		restaurantPickerPage.classList.add('hidden');
+		stompClient.deactivate();
 	} else {
 		alert(restaurantPickerDto.errorMessage);
 	}
@@ -64,6 +65,7 @@ function displayRestaurantNames(restaurantNames) {
 		}
 		$("#restaurantListArea").append(restaurantName);
 	}
+	restaurantListArea.scrollTop = restaurantListArea.scrollHeight
 }
 
 function onError(error) {
@@ -92,7 +94,7 @@ function createSession(event) {
 	console.log("createSession");
 	$.ajax({
 		type: "GET",
-		url: "http://localhost:8080/createSession",
+		url: "http://localhost:8001/createSession",
 		dataType: "json",
 		success: function(response) {
 			console.log("response: " + response);
@@ -114,7 +116,7 @@ function joinSession(event) {
 	console.log("joinSession");
 	$.ajax({
 		type: "GET",
-		url: "http://localhost:8080/joinSession?sessionCode=" + sessionCode,
+		url: "http://localhost:8001/joinSession?sessionCode=" + sessionCode,
 		dataType: "json",
 		success: function(response) {
 			console.log("response: " + response);
