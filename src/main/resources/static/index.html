@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Restaurant Picker</title>
+	<link href="/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+	<noscript>
+		<h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+			enabled. Please enable
+			Javascript and reload this page!</h2>
+	</noscript>
+	<div id="session-page">
+		<div class="session-page-container">
+			<h1 class="title">ENTER CODE TO JOIN SESSION</h1>
+			<form id="joinSessionForm" name="joinSessionForm">
+				<div class="form-group">
+					<input type="text" id="sessionCode" placeholder="Enter Session Code..." autocomplete="off"
+						class="form-control" />
+				</div>
+				<div class="form-group">
+					<button type="submit" class="accent join-session-submit">JOIN SESSION</button>
+				</div>
+			</form>
+			<form id="createSessionForm" name="createSessionForm">
+				<div class="form-group">
+					<button type="submit" class="accent create-session-submit">CREATE SESSION</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="session-code-page" class="hidden">
+		<div class="session-page-container">
+			<h1 id="sessionCodeH1" class="title">SESSION CODE: </h1>
+		</div>
+		<div class="button-container">
+			<button id="closeShareSessionPageButton" type="submit" class="secondary">CLOSE</button>
+		</div>
+	</div>
+	<div id="selected-name-page" class="hidden">
+		<div class="session-page-container">
+			<h1 id="selectedNameH1" class="title"></h1>
+		</div>
+	</div>
+	<div id="restaurant-picker-page" class="hidden">
+		<div class="restaurant-picker-container">
+			<div class="restaurant-picker-header">
+				<h2>Restaurant Picker</h2>
+			</div>
+			<div class="connecting">
+				Connecting...
+			</div>
+			<ul id="restaurantListArea">
+			</ul>
+			<form id="submitRestaurantForm" name="submitRestaurantForm">
+				<div class="form-group">
+					<div class="input-group clearfix">
+						<input type="text" id="restaurantName" placeholder="Enter a restaurant name..." autocomplete="off"
+							class="form-control" />
+						<button type="submit" class="main">SUBMIT</button>
+					</div>
+					<div class="button-container">
+						<button id="endSessionButton" class="secondary">END SESSION</button>
+						<button id="shareSessionButton" class="secondary">SHARE SESSION</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.0.0/bundles/stomp.umd.min.js"></script>
+<script src="/js/app.js"></script>
+
+</html>
