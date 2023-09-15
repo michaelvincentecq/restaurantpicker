@@ -77,43 +77,44 @@ The application will start, and you should see output in the terminal indicating
 ### 6. Access the Application
 
 Open your web browser and access the application at [http://localhost:8001](http://localhost:8001).
-![image](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/a9818e44-cd50-4a1e-98a3-8819c9f1034d)
+![1](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/eb3d8b68-a898-4013-be73-e4f932108be7)
 
 ## Functionalities
 
 ### Creating a session
 
-* To initiate  a new session, a user must click on CREATE SESSION button ![image](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/e423ccab-8aa8-4dc1-a985-f8c3e0b22751)
+* To initiate  a new session, a user must click on CREATE SESSION button ![2](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/568c7563-f526-4fa8-b5eb-2d118c8b6682)
 * Once a new session has been created, the Restaurant Picker will be displayed
-![image](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/58c0422e-6d9b-4278-8075-484d194399a9)
+![3](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/4a60bc16-df13-4d67-bf17-649ab3fa7bf7)
+
 
 
 ### Inviting other users to join the session
 
-* From the Restaurant Picker screen, any user can click on SHARE SESSION button ![image](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/3a96425a-f20b-44dd-add4-75bf1057f700)
+* From the Restaurant Picker screen, any user can click on SHARE SESSION button ![4](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/456a5d48-3449-4beb-9b6d-48128e68dc3c)
 * The screen will display a 4 letter code that the users can share to their friends to join the picking session.
-![image](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/84270111-8170-41df-8de4-718854ac7c45)
+![5](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/520ea8c0-7faf-4c82-9016-87a050f65d96)
 
 ### Joining a session
 
 * After a user receives the 4 letter session code, they can input it into the text box in the initial screen then click on JOIN SESSION button.
-![image](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/86c7f753-63b2-41b4-a43c-87f512de8d32)
+![6](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/1fa411d2-d1d9-4db0-8689-96ff873e2f5e)
 
 * Once successfully joined, the Restaurant Picker will be displayed and they can start to submit their choice.
-  ![image](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/6ede6972-1053-4107-b730-ba40cfefcf21)
+![7](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/1f111fd6-4d17-40ba-8602-bd7637e69822)
 
 ### Submitting a restaurant name
 
 * In the Restaurant Picker text box, they can input the restaurant name of their choice then click on SUBMIT button.
-![image](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/98b54a71-3575-44f1-a4ae-3d48ec86d572)
+![8](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/59bc3315-40c2-4cc2-8ef0-2b0bdf5e7027)
 
 * The submitted restaurant name will be listed in the text area and be displayed on other user's screen. Also the submission from other users will be displayed in the screen real time.
 
 ### Randomly select a restaurant from the list (Ending a session)
 
-* Once the group are ready for the random selection, the initiator can end the session by clicking on END SESSION button. ![image](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/9dd3fce5-dd1c-4705-bb02-e93e7507644f)
+* Once the group are ready for the random selection, the initiator can end the session by clicking on END SESSION button. ![9](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/30e6d636-b63f-452b-87b9-cfd21ae00797)
 * The application will randomly select from the list and display into each user's screen in the session.
-![image](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/f912dbef-66be-4885-b6d5-0bfb7a119c68)
+![10](https://github.com/michaelvincentecq/restaurantpicker/assets/145078795/55001be4-ce60-441d-847e-6e85252acf60)
 
 ## Rest APIs
 
