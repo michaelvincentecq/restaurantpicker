@@ -118,47 +118,45 @@ Open your web browser and access the application at [http://localhost:8001](http
 ## Rest APIs
 
 ### Create Session
+```
 End Point: /createSession
-
 Parameter: None
-
 Response: JSON
-
 Sample Response: {"sessionId":"8ee233c7-8cf9-4465-aad3-6e721dd22db5","sessionCode":"OXYF"}
-
+```
 
 ### Join Session
+```
 End Point: /joinSession
-
 Parameter: sessionCode
-
 Response: JSON
-
 Sample Response: {"sessionId":8ee233c7-8cf9-4465-aad3-6e721dd22db5,"restaurantNames":null,"errorCode":null,"errorMessage":null}
+```
 
 ## Message Topic
 
 ### Receiving message from the server
+```
 Topic: /topic/restaurantPicker/{sessionId}
+```
 
 Whenever there are response from the server, the subscriber of this topic will receive based on the sessionId.
 
 ## Message Destinations
 
 ### Submit Restaurant Name
+```
 Destination: /submitRestaurantName/{sessionId}
-
 Parameter: submitRestaurantNameMessage.restaurantName
-
 Java Controller: RestaurantPickerMessageController.submitRestaurantName
-
+```
 
 ### End Session
+```
 Destination: /endSession/{sessionId}
-
 Parameter: None
-
 Java Controller: RestaurantPickerMessageController.endSession
+```
 
 ## Technologies Used
 
