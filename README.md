@@ -55,7 +55,7 @@ git clone https://github.com/michaelvincentecq/restaurantpicker.git
 Navigate to the project's root directory:
 
 ```bash
-cd your-repo-name
+cd /path/to/restaurantpicker
 ```
 
 Build the application using Maven:
